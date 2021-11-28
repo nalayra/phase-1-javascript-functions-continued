@@ -1,13 +1,13 @@
-function saturdayFun(activity="roller-skate") {
-  return `This Saturday, I want to ${activity}!`
+let saturdayFun = function (input = 'roller-skate') {
+  return `This Saturday, I want to ${input}!`;
 }
 
-let mondayWork = function(activity="go to the office") {
-  return `This Monday, I will ${activity}.`
+let mondayWork = function (input = 'go to the office') {
+  return `This Monday, I will ${input}.`
 }
 
-let wrapAdjective = function(style="*") {
-  return function(adjective="special") {
-    return `You are ${style}${adjective}${style}!`
+let wrapAdjective = function (flair = '*') {
+  return function (adjective = 'special') {
+    return `You are ${flair}${adjective}${flair}!`;
   }
-}
+} 
